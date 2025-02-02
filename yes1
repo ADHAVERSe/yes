@@ -8,7 +8,7 @@ def index():
 
 @app.route('/youtube')
 def youtube_redirect():
-    return redirect("https://www.youtube.com/")  # Replace with your desired YouTube link
+    return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # Replace with your desired YouTube link
 
 if __name__ == '__main__':
     app.run(debug=True)
