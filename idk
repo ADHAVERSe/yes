@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Redirect</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <button onclick="window.location.href = '{{ url_for('youtube_redirect') }}'">Go to YouTube</button>
+</body>
+</html>
