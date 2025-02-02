@@ -1,0 +1,14 @@
+from flask import Flask, render_template, redirect, url_for
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/youtube')
+def youtube_redirect():
+    return redirect("https://www.youtube.com/")  # Replace with your desired YouTube link
+
+if __name__ == '__main__':
+    app.run(debug=True)
